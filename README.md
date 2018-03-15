@@ -63,6 +63,8 @@ const microFn = async (req, res) => {
 
 module.exports = cache(24 * 60 * 60 * 1000, microFn) // One day data caching
 ```
+### Mongo Support
+cache-micro supports Mongo (and hopefully Redis in the future) because in-memory data cache can't scale horizontally and if you work with microservices you will loose that advantage. So you can avoid that problem setting the `MONGO_URL` and `MONGO_DB` enviroment variables so all your microservice's instances use the same cache.
 
 ## Why?
 I worked on a project with micro using it for making web-scrapping workers that take too long the first time to get the data, and users requested often the same data so with this I can save a lot of requests, processing and time making requests of +5000ms only take 50ms.
