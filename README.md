@@ -7,7 +7,7 @@
 [![Slack Channel](http://zeit-slackin.now.sh/badge.svg)](https://zeit.chat/)
 [![Greenkeeper badge](https://badges.greenkeeper.io/fmiras/cache-micro.svg)](https://greenkeeper.io/)
 
-cache-micro is an utility for data caching focused on [micro framework](https://github.com/zeit/micro). The problem that solves this package is to save the already requested data in-memory to have it available for a configurated time without processing it again. 
+cache-micro is an utility for data caching focused on [micro framework](https://github.com/zeit/micro). The problem this package solves is to save the already requested data in-memory to have it available for a configurated time without processing it again. 
 
 ## Usage
 
