@@ -4,7 +4,10 @@
   "description": "A micro utility for data caching",
   "main": "index.js",
   "scripts": {
-    "test": "nyc ava"
+    "test": "xo && nyc ava"
+  },
+  "xo": {
+    "extends": "prettier"
   },
   "keywords": [
     "micro",
@@ -17,7 +20,9 @@
   "devDependencies": {
     "ava": "0.25.0",
     "nyc": "11.6.0",
+    "prettier": "1.11.1",
     "sinon": "4.4.5",
-    "sleep": "5.1.1"
+    "sleep": "5.1.1",
+    "xo": "0.20.3"
   }
 }
