@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "description": "A micro utility for data caching",
   "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
   "keywords": [
     "micro",
     "cache",
@@ -10,5 +13,10 @@
     "micro-cache"
   ],
   "author": "fmiras",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "0.25.0",
+    "sinon": "4.4.5",
+    "sleep": "5.1.1"
+  }
 }
