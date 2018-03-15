@@ -1,5 +1,5 @@
 {
-  "name": "microcache",
+  "name": "cache-micro",
   "version": "1.0.0",
   "description": "A micro utility for data caching",
   "author": "fmiras",
