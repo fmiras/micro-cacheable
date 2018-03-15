@@ -1,4 +1,4 @@
-# micro-cache
+# cache-micro
 [![NPM version](https://img.shields.io/npm/v/cache-micro.svg)](https://www.npmjs.com/package/cache-micro)
 [![Build Status](https://travis-ci.org/fmiras/cache-micro.svg?branch=master)](https://travis-ci.org/fmiras/cache-micro)
 [![Coverage Status](https://coveralls.io/repos/github/fmiras/cache-micro/badge.svg?branch=master)](https://coveralls.io/github/fmiras/cache-micro?branch=master)
