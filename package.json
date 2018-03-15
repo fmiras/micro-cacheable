@@ -41,5 +41,8 @@
     "sinon": "4.4.6",
     "sleep": "5.1.1",
     "xo": "0.20.3"
+  },
+  "dependencies": {
+    "mongodb": "3.0.4"
   }
 }
