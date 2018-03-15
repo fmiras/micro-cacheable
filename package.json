@@ -4,9 +4,9 @@
   "description": "A micro utility for data caching",
   "author": "fmiras",
   "license": "MIT",
-  "repository": "fmiras/micro-cache",
-  "bugs": "https://github.com/fmiras/micro-cache/issues",
-  "homepage": "https://github.com/fmiras/micro-cache",
+  "repository": "fmiras/cache-micro",
+  "bugs": "https://github.com/fmiras/cache-micro/issues",
+  "homepage": "https://github.com/fmiras/cache-micro",
   "main": "lib/index.js",
   "files": [
     "lib"
@@ -29,7 +29,8 @@
     "micro",
     "cache",
     "microservices",
-    "micro-cache"
+    "micro-cache",
+    "cache-micro"
   ],
   "devDependencies": {
     "ava": "0.25.0",
