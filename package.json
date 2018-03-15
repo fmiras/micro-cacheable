@@ -4,7 +4,15 @@
   "description": "A micro utility for data caching",
   "main": "index.js",
   "scripts": {
-    "test": "xo && nyc ava"
+    "test": "xo && nyc ava",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm run test",
+      "prettier --single-quote --no-semi --write",
+      "git add"
+    ]
   },
   "xo": {
     "extends": "prettier"
@@ -19,6 +27,8 @@
   "license": "MIT",
   "devDependencies": {
     "ava": "0.25.0",
+    "husky": "0.14.3",
+    "lint-staged": "7.0.0",
     "nyc": "11.6.0",
     "prettier": "1.11.1",
     "sinon": "4.4.5",
