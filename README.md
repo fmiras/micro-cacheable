@@ -29,7 +29,40 @@ const microFn = (req, res) => {
 module.exports = cache(60 * 60 * 1000, microFn)
 ```
 
-then just run your microservice normally and it will return the same result for an hour (first param as miliseconds)
+then just run your microservice normally and it will return the same result for an hour (first param as miliseconds) unless that you change the request url.
+
+#### A more useful example:
+
+Let's say that we need a microservice that receives a name (string) and search data of a person on 3 or 4 APIs:
+```javascript
+const { parse } = require('url')
+const fetch = require('node-fetch')
+
+module.exports = async (req, res) => {
+  const { searchName } = parse(req.url, true).query
+  const facebookData = await fetch('https://someapi1.com')
+  const githubData = await fetch('https://someapi2.com')
+  const financialData = await fetch('https://someapi3.com')
+  return { facebookData, githubData, financialData }
+}
+```
+
+This microservice would fetch 3 APIs every time it receives a request. Probably, in some cases, if the microservice receive the same name it will return the same data, at least for the same day, so you can just add cache-micro like this:
+```javascript
+const { parse } = require('url')
+const fetch = require('node-fetch')
+const cache = require('cache-micro')
+
+const microFn = async (req, res) => {
+  const { searchName } = parse(req.url, true).query
+  const facebookData = await fetch('https://someapi1.com')
+  const githubData = await fetch('https://someapi2.com')
+  const financialData = await fetch('https://someapi3.com')
+  return { facebookData, githubData, financialData }
+}
+
+module.exports = cache(24 * 60 * 60 * 1000, microFn) // One day data caching
+```
 
 ## Why?
 I worked on a project with micro using it for making web-scrapping workers that take too long the first time to get the data, and users requested often the same data so with this I can save a lot of requests, processing and time making requests of +5000ms only take 50ms.
