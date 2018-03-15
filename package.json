@@ -1,0 +1,14 @@
+{
+  "name": "micro-cache",
+  "version": "0.0.0",
+  "description": "A micro utility for data caching",
+  "main": "index.js",
+  "keywords": [
+    "micro",
+    "cache",
+    "microservices",
+    "micro-cache"
+  ],
+  "author": "fmiras",
+  "license": "MIT"
+}
