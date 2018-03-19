@@ -1,12 +1,12 @@
 {
-  "name": "cache-micro",
+  "name": "micro-cacheable",
   "version": "2.0.0",
   "description": "A micro utility for data caching",
   "author": "fmiras",
   "license": "MIT",
-  "repository": "fmiras/cache-micro",
-  "bugs": "https://github.com/fmiras/cache-micro/issues",
-  "homepage": "https://github.com/fmiras/cache-micro",
+  "repository": "fmiras/micro-cacheable",
+  "bugs": "https://github.com/fmiras/micro-cacheable/issues",
+  "homepage": "https://github.com/fmiras/micro-cacheable",
   "main": "lib/index.js",
   "files": [
     "lib"
@@ -30,7 +30,7 @@
     "cache",
     "microservices",
     "micro-cache",
-    "cache-micro"
+    "micro-cacheable"
   ],
   "devDependencies": {
     "ava": "0.25.0",
