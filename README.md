@@ -1,10 +1,9 @@
 # micro-cacheable
 [![NPM version](https://img.shields.io/npm/v/micro-cacheable.svg)](https://www.npmjs.com/package/micro-cacheable)
 [![Build Status](https://travis-ci.org/fmiras/micro-cacheable.svg?branch=master)](https://travis-ci.org/fmiras/micro-cacheable)
-[![Coverage Status](https://coveralls.io/repos/github/fmiras/micro-cacheable/badge.svg?branch=master)](https://coveralls.io/github/fmiras/micro-cacheable?branch=master)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/xojs/xo)
-[![Slack Channel](http://zeit-slackin.now.sh/badge.svg)](https://zeit.chat/)
+[![Join the community on Spectrum](https://withspectrum.github.io/badge/badge.svg)](https://spectrum.chat/micro)
 [![Greenkeeper badge](https://badges.greenkeeper.io/fmiras/micro-cacheable.svg)](https://greenkeeper.io/)
 
 micro-cacheable is an utility for data caching focused on [micro framework](https://github.com/zeit/micro). The problem this package solves is to save the already requested data in-memory to have it available for a configurated time without processing it again.
