@@ -43,6 +43,6 @@
     "xo": "0.21.1"
   },
   "dependencies": {
-    "mongodb": "3.1.0-beta4"
+    "mongodb": "3.1.0"
   }
 }
